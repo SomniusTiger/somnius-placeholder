@@ -2,6 +2,10 @@
 <html>
   <head>
     <style>
+      html, body {
+        height: 100%;
+        width: 100%;
+      }
       body {
         background-color: #000;
         color: #fff;
@@ -16,79 +20,115 @@
         padding: 0;
       }
       h1 {
-        font-size: 7vw;
-      }
-      h2 {
-        font-size: 5vw;
+        font-size: 10vmin;
+        margin: 0.5vmin 0 1vmin;
+        line-height: 10vmin;
       }
       ul {
         padding: 0;
+        width: 100%;
       }
       li {
         display: inline-block;
         list-style: none;
-        margin: 0 10px;
+        margin: 0 2vmin;
       }
       p {
-        font-size: 4vw;
+        font-size: 4.5vmin;
+        margin: 4vmin 0;
       }
       a {
-        border: solid 3px #fff;
+        border: solid 0.5vmin #fff;
         border-radius: 50%;
-        display: inline-block;
-        height: 30px;
+        display: table;
+        height: 8vmin;
         opacity: 1;
-        padding: 12px;
+        padding: 1vmin;
         transition: opacity 200ms ease-out;
         vertical-align: middle;
-        width: 30px;
+        width: 8vmin;
       }
       a:hover {
         opacity: 0.75;
       }
+      .link-wrap {
+        display: block;
+      }
       .icon {
         background-color: #fff;
         border-radius: 50%;
-        max-width: 300px;
-        width: 100%;
+        height: 35vmin;
+        width: 35vmin;
+      }
+      .logo-wrap {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
       }
       .logo {
         display: inline-block;
-        height: 25px;
-        margin-top: 2px;
+        height: 5vmin;
         vertical-align: middle;
-        width: 25px;
+        width: 5vmin;
+      }
+      .content-wrap {
+        height: 100%;
+        display: table;
+        width: 100%;
+      }
+      .content-wrap-outer {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .content-wrap-inner {
+        margin: 0 auto;
+        padding: 0 7vmin;
+        width: 85vmin;
       }
     </style>
   </head>
   <body>
-    <header>
-      <h1>Somnius</h1>
-      <p>Achromatic tiger, audiophile, polyglot, software engineer, indie & rhythm gamer, pronoun-agnostic. A blend of positivity and nihilism.</p>
-      <img class="icon" src="assets/images/somnius.svg" alt="Somnius Tiger Icon"/>
-    </header>
-    <section class="description">
-      <h2>About Me</h2>
-      <p>Nice to meet you! My name is Somnius, and I&rsquo;m a tiger who lives in San Francisco. I code websites for a living, enjoy craft beer, imbibe strong coffee, and wear all black clothing. Feel free to say hi!</p>
-    </section>
-    <section class="social">
-      <ul>
-        <li>
-          <a href="https://twitter.com/_somnius" target="_blank">
-            <img class="logo" src="assets/images/twitter-white.svg" alt="Twitter Logo"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://somnius-insp.tumblr.com/" target="_blank">
-            <img class="logo" src="assets/images/tumblr-logo-white.svg" alt="Tumblr Logo"/>
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/somnius" target="_blank">
-            <img class="logo" src="assets/images/telegram-white.svg" alt="Telegram Logo"/>
-          </a>
-        </li>
-      </ul>
-    </section>
+    <div class="content-wrap">
+      <div class="content-wrap-outer">
+        <div class="content-wrap-inner">
+          <header>
+            <img class="icon" src="assets/images/somnius.svg" alt="Somnius Tiger Icon"/>
+            <h1>Somnius</h1>
+            <p>Achromatic tiger, audiophile, polyglot, software engineer, indie & rhythm gamer, pronoun-agnostic. A blend of positivity and nihilism.</p>
+          </header>
+          <section class="social">
+            <ul>
+              <li>
+                <span class="link-wrap">
+                  <a href="https://twitter.com/_somnius" target="_blank">
+                    <span class="logo-wrap">
+                      <img class="logo" src="assets/images/twitter-white.svg" alt="Twitter Logo"/>
+                    </span>
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="link-wrap">
+                  <a href="https://somnius-insp.tumblr.com/" target="_blank">
+                    <span class="logo-wrap">
+                      <img class="logo" src="assets/images/tumblr-logo-white.svg" alt="Tumblr Logo"/>
+                    </span>
+                  </a>
+                </span>
+              </li>
+              <li>
+                <span class="link-wrap">
+                  <a href="https://t.me/somnius" target="_blank">
+                    <span class="logo-wrap">
+                      <img class="logo" src="assets/images/telegram-white.svg" alt="Telegram Logo"/>
+                    </span>
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
