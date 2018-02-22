@@ -31,19 +31,22 @@
       li {
         display: inline-block;
         list-style: none;
-        margin: 0 2vmin;
+        margin: 0 1vmin;
       }
       p {
-        font-size: 4.2vmin; 
+        font-size: 4.2vmin;
         margin: 0 0 6vmin;
       }
       a {
+        align-items: center;
         border: solid 0.5vmin #fff;
         border-radius: 50%;
-        display: table;
+        display: flex;
         height: 8vmin;
+        justify-content: center;
         opacity: 1;
         padding: 1vmin;
+        text-align: center;
         transition: opacity 200ms ease-out;
         vertical-align: middle;
         width: 8vmin;
@@ -61,7 +64,7 @@
         width: 35vmin;
       }
       .logo-wrap {
-        display: table-cell;
+        display: inline-block;
         text-align: center;
         vertical-align: middle;
       }
@@ -72,13 +75,16 @@
         width: 5vmin;
       }
       .content-wrap {
+        align-items: center;
         height: 100%;
-        display: table;
+        display: flex;
+        justify-content: center;
         width: 100%;
       }
       .content-wrap-outer {
-        display: table-cell;
+        display: block;
         vertical-align: middle;
+        width: 100%;
       }
       .content-wrap-inner {
         margin: 0 auto;
